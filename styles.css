@@ -1,0 +1,318 @@
+/* font-family: 'Kalam', cursive;
+font-family: 'M PLUS 1p', sans-serif; - h1
+font-family: 'Mulish', sans-serif;
+font-family: 'Signika Negative', sans-serif; */
+
+
+*,  
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+body, p {
+  font-size: 18px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 200;
+  background-color: #f0f3f5;
+  color: #41463d;
+  
+}
+
+h1 {
+  font-size: 3.556rem;
+  font-family: 'M PLUS 1p', sans-serif;
+  font-weight: 900;
+  color: #a18276;
+  padding: 0px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+h1::first-letter {
+  color: #D7C9AA;
+}
+
+ul {
+
+}
+
+li {
+}
+
+h2 {
+  font-family: 'Kalam', cursive;
+  font-weight: 400;
+  color: #41463D;
+  font-size: 4rem;
+  margin: 0px;
+}
+
+h3 {
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #41463D;
+  letter-spacing: .05em;
+  text-align: center;
+}
+
+span {
+  text-transform: italic;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+a {
+  text-transform: uppercase;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  color: #41463d;
+}
+
+hr {
+  display: flex;
+  height: 1px;
+  border: 0;
+
+  padding: 0;
+  background-color: white;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+}
+
+/* This is where I start my grid layout */
+
+#flex-container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 1440px;
+  height: auto;
+  padding-left: 125px;
+  padding-right: 125px;
+  padding-bottom: 75px;
+}
+  
+
+.nav {
+  width: 100%;
+  height: auto;
+  padding-bottom: 75px;
+  
+}
+
+
+
+.logo {
+
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  justify-content: stretch;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  border: 10px solid white;
+  margin: 75px 0px;
+}
+
+.centerline {
+  display: flex;
+  width: 50%;
+  margin-bottom: 75px;
+  justify-content: center;
+}
+
+.quotebox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 75px 0px;
+}
+
+.big-quote {
+  display: flex;
+  width: 50%;
+}
+
+
+.small-quote {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  line-height: 40px;
+}
+
+
+.quotebox div:nth-child(1) {
+  
+}
+
+.quotebox div:nth-child(2) {
+  
+}
+
+
+button {
+  border: none;
+  color: #41463D;
+  background-color: white;
+  padding: 28px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  font-size: .50em;
+  margin: 10px 5px;
+  font-size: 18px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+  letter-spacing: .175rem;
+}
+
+ .btnbox {
+  position: relative;
+  width: 100%;
+} 
+
+
+.btn2 button {
+  padding: 14px 16px;
+  font-size: .75rem;
+  
+}
+
+.btn1 {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn2 {
+  display: flex;
+  position: relative;
+  right: 3.5rem;
+  align-items: right;
+  justify-content: end;
+  width: 100%;
+  margin: 5px 2px;
+}
+
+.special-call {
+  display: inline-flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.special-call h3 {
+  align-self: start;
+}
+
+.special-call img {
+  width: 20%;
+  height: auto;
+  align-self: center;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin: 25px;
+  margin-bottom: 75px;
+}
+
+.img1, .img2, .img3 {
+  display: inline-flex;
+  height: auto;
+  width: 33%;
+  justify-content: center;
+}
+
+.img-container img{
+  width: 355px;
+  border: 7px solid white;
+}
+
+.ims {
+  display: inline-flex;
+  height: 544px;
+  width: 355px;
+  border: 7px solid white;
+}
+
+.hr-div {
+  display: flex;
+  justify-content: center;
+}
+
+.txt1, .txt2, .txt3 {
+  display: inline-flex;
+  width: 33%;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: .125rem;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+
+
+
+ footer {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #D7C9AA;
+  color: #41463D;
+  max-height: 300px;
+  margin: 0px;
+  padding-top: 125px;
+  padding-left: 75px;
+  padding-right: 125px;
+  padding-bottom: 75px;
+}
+
+ 
+
+footer ul {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 96px;
+}
+
+footer li {
+  
+}
+
+/* .nav-footer {
+  display: flex;
+  justify-content: space-between;
+} */
