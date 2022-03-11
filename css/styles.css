@@ -16,7 +16,7 @@ font-family: 'Signika Negative', sans-serif; */
 
 
 body, p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Mulish', sans-serif;
   font-weight: 200;
   background-color: #f0f3f5;
@@ -30,9 +30,10 @@ h1 {
   font-weight: 900;
   color: #a18276;
   padding: 0px;
-  padding-bottom: 30px;
-  padding-top: 50px;
+  padding-bottom: 1.67rem;
+  padding-top: 2.78rem;
 }
+
 
 h1::first-letter {
   color: #D7C9AA;
@@ -95,72 +96,134 @@ hr {
 #flex-container {
   display: inline-flex;
   flex-direction: column;
-  width: 1440px;
+  width: 100%;
+  max-width: 1600px;
   height: auto;
-  padding-left: 125px;
-  padding-right: 125px;
-  padding-bottom: 75px;
+  padding-left: 6.94rem;
+  padding-right: 6.94rem;
+  padding-bottom: 4.33rem;
+  gap: 1.5rem 2rem;
 }
   
 
 .nav {
   width: 100%;
+  min-width: 17.78rem;
   height: auto;
-  padding-bottom: 75px;
-  
+  padding-bottom: 4.33rem;
+  flex-flow: wrap;
 }
 
+@media only screen and (min-width:320px) and (max-width:750px) , (orientation: portrait) {
+    .nav {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
 
+    }
+    .nav ul {
+        display: flex; 
+        text-align: center; 
+        width: 100%; 
+        flex-flow: 1 1 100%;
+    }
+
+    .nav li {
+        display: flex; 
+        text-align: center; 
+        width: 100%; 
+        flex-flow: 0 0 100%;
+    }
+  }
 
 .logo {
-
+    display: flex;
+    min-width: 16.67rem;
 }
 
 .nav ul {
   display: flex;
   justify-content: space-between;
+  flex: 0 0 100%;
+  gap: 20px;
+}
+
+
+
+.nav li {
+ display: flex;
+
 }
 
 .banner {
   display: flex;
   height: auto;
   max-width: 100%;
-  justify-content: stretch;
+  justify-content: center;
 }
 
 .banner img {
   max-width: 100%;
+  min-width: 17.78rem;
   height: auto;
-  border: 10px solid white;
-  margin: 75px 0px;
+  border: .556rem solid white;
+  margin: 4.167rem 0px;
 }
 
 .centerline {
   display: flex;
   width: 50%;
-  margin-bottom: 75px;
+  margin-bottom: 4.167rem;
   justify-content: center;
 }
 
 .quotebox {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   width: 100%;
-  margin: 75px 0px;
+  margin: 4.167rem 0px;
 }
+
+@media only screen and (min-width:320px) and (max-width:750px) , (orientation: portrait) {
+    .quotebox {
+        display: flex; 
+        flex-flow: column wrap;
+        text-align: center; 
+        width: 100%; 
+        
+    }
+
+    .big-quote {
+        display: flex;
+        min-width: 100%;
+        flex: 1 1 100%;
+      }
+      
+      
+      .small-quote {
+        display: flex;
+        min-width: 100%;
+        line-height: 2.22rem;
+        flex-flow: 1 1 100%;
+        
+      }
+
+  }
 
 .big-quote {
   display: flex;
-  width: 50%;
+  max-width: 50%;
+  flex: 0 0 50%;
 }
 
 
 .small-quote {
   display: flex;
-  width: 50%;
-  flex-wrap: wrap;
-  line-height: 40px;
+  max-width: 50%;
+  line-height: 2.22rem;
+  flex: 0 0 50%;
+  flex-flow: row wrap;
+  
 }
 
 
@@ -177,31 +240,21 @@ button {
   border: none;
   color: #41463D;
   background-color: white;
-  padding: 28px 32px;
+  padding: 1.56rem 2rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   display: block;
   font-size: .50em;
-  margin: 10px 5px;
-  font-size: 18px;
+  margin: 1.56rem .278rem;
+  font-size: 1rem;
   font-family: 'Mulish', sans-serif;
   font-weight: 200;
   cursor: pointer;
   letter-spacing: .175rem;
 }
 
- .btnbox {
-  position: relative;
-  width: 100%;
-} 
 
-
-.btn2 button {
-  padding: 14px 16px;
-  font-size: .75rem;
-  
-}
 
 .btn1 {
   display: flex;
@@ -217,52 +270,63 @@ button {
   align-items: right;
   justify-content: end;
   width: 100%;
-  margin: 5px 2px;
+  margin: .278rem .111rem;
 }
 
 .special-call {
-  display: inline-flex;
+  display: flex;
   width: 100%;
-  flex-wrap: nowrap;
+  flex-wrap: row wrap;
   justify-content: center;
 }
 
 .special-call h3 {
   align-self: start;
+  flex-flow: 0 0 50%;
 }
 
 .special-call img {
   width: 20%;
   height: auto;
-  align-self: center;
+  align-self: end;
+  flex-flow: 0 0 50%;
 }
+  
+.btn2 {
+    padding: .778rem 1rem;
+    font-size: .75rem;
+
+  }
 
 .img-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: inline-block;
+  flex-flow: column wrap;
+  margin: 1.5rem;
+  margin-bottom: 4.167rem;
   width: 100%;
-  height: auto;
-  margin: 25px;
-  margin-bottom: 75px;
+  min-width: 17.78rem;
+  height: 455px;
+  justify-content: space-evenly;
 }
 
 .img1, .img2, .img3 {
-  display: inline-flex;
-  height: auto;
-  width: 33%;
-  justify-content: center;
+    display: inline-block;
+    width: 33%;
+   height: 455px;
+   flex: 0 0 30%;
 }
 
+
 .img-container img{
-  width: 355px;
-  border: 7px solid white;
+  width: ;
+  height: 100%;
+  border: .389rem solid white;
 }
 
 .ims {
   display: inline-flex;
-  height: 544px;
-  width: 355px;
+  height: 30.22rem;
+  width: 20rem;
   border: 7px solid white;
 }
 
@@ -291,12 +355,12 @@ button {
   width: 100%;
   background-color: #D7C9AA;
   color: #41463D;
-  max-height: 300px;
+  max-height: 16.67rem;
   margin: 0px;
-  padding-top: 125px;
-  padding-left: 75px;
-  padding-right: 125px;
-  padding-bottom: 75px;
+  padding-top: 6.94rem;
+  padding-left: 4.167rem;
+  padding-right: 6.94rem;
+  padding-bottom: 4.167rem;
 }
 
  
@@ -305,7 +369,7 @@ footer ul {
   display: inline-flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-top: 96px;
+  padding-top: 5.33rem;
 }
 
 footer li {
